@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>
+        Graphical Score
+    </title>
+ 	<script type="text/javascript" src="lib/osc-browser.min.js"></script>
+     <link rel="stylesheet" href="styles.css">  
+    <script src="leapjs-master/leap-0.6.4.min.js"></script>   
+    
+       <script type="text/javascript" src= "leapmotioncode.js"></script>
+       <script type="text/javascript" src= "sound.js"></script>
+       <script type="text/javascript" src= "Shapes.js"></script>
+       <script type="text/javascript" src= "shapeObjects.js"></script>
+       <script type="text/javascript" src= "main.js"></script>
+
+</head>
+<body>
+    <h1 style="color: black">Graphical Score Implementation</h1>
+    <canvas id="myCanvas" width="700" height="450" style="border:1px solid #d3d3d3;"></canvas>
+
+    <h1 style="color:white; font-family:helvetica;"> Leap </h1> 
+ <img onclick="lmc.playRecorded()" style="background: black" src="play.jpg">
+</img>
+<img onclick="lmc.record()" style="background: black" src="stop.png">
+</img>  
+
+<button id="btnOpen">Open</button>
+
+      <script type="text/javascript">
+        var canvas = document.getElementById("myCanvas"); // This gets the window in the browser
+        var width = canvas.width;
+        var height = canvas.height;
+        var ctx = canvas.getContext("2d"); // x,y
+      </script>
+
+</body>
+ 
+</html>
